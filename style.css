@@ -1,118 +1,146 @@
-body {
-    height: 100vh;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
     margin: 0;
-    display: flex;
-    flex-direction: column;
-    font-family: 'Anton', sans-serif;
+    padding: 0;
 }
-.header {
+
+body {
+    font-family: 'Roboto';
+}
+
+/* Header */
+
+header {
+    background-color: #1f2937;
+    padding: 1em 13em;
+}
+
+/* Navigation */
+
+.nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    background-color: #1F2937;
-    color: #F9FAF8;
+    align-items: flex-start;
 }
 
-.header-logo {
-    
-    color: #f9faf8;
-    font-size: 24px;
-    padding-left: 12%;
+.left {
+    display: flex;
+    justify-content: flex-start;
+
 }
-li {
+.nav .left p {
+   font-size: 48px;
+   font-weight: bolder;
+   color: #f9faf8;
+}
+
+.right ul {
     list-style-type: none;
+    gap: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-a {
+
+.secondary,
+a:link, a:visited {
+    font-size: 18px;
     text-decoration: none;
     color: #e5e7eb;
-    font-size: 18px;
 }
-.right-links {
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 12%;
-    gap: 12px;
-}
-.content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.container-1 {
-    display: flex;
-   justify-content: space-around;
-    background-color: #1f2937;
-}
-.container-1-text {
-display: flex;
-flex-direction: column;
-align-content: flex-start;
-}
-h3 {
-    color: #f9faf8;
-    font-size: 48px;
-    font-weight: bolder;
-}
-h6 {
-    color: #e5e7eb;
-    font-size: 18px;
-    flex-wrap: wrap;
-}
-button{
-    background-color: #3882f6;
-    color: white;
-    border-radius: 10px;
-}
-.container-1-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    background-color: gray;
-}
-.container-2 {
-    display:flex;
-    flex-direction: column;
 
-}
-.container-2-title {
+/* Welcome */
+
+.welcome {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    padding: 8em 0;
+    gap: 1.5em;
 }
-.container-2-img {
-display: flex;
-justify-content: space-evenly;
-border: blue;
-}
-.container-2-sub {
-display: flex;
-justify-content: space-evenly;
-}
-.container-3 {
+
+.left {
     display: flex;
     flex-direction: column;
-    background-color: #e5e7eb;
-    display: flex;
-    justify-content: center;
-    padding: 36px;
+    align-items: flex-start;
+    gap: 1.5em;
 }
-.quote {
-    font: 36px light italic #1f2937;
+.hero {
+    font-weight: bolder;
+    font-size: 48px;
+    color: #f9faf8;
 }
-.author {
-    display: flex;
-    justify-content: flex-end;
-    font: 36px bold #1f2937;
+
+.left p {
+    font-size: 18px;
+    color: #e5e7eb;
 }
-.container-4 {
+
+.left button {
     display: flex;
+    align-items: flex-start;
     background-color: #3882f6;
+    font-weight: bold;
+    color: #f9faf8;
+    border-radius: 8px;
+    padding: 7px;
+    border: none;
 }
-.footer {
+
+.image {
+    background-color: gray;
     display: flex;
     justify-content: center;
-    margin-top: auto;
-    padding: 32px;
-    background-color: #1f2937;
+    height: 215px;
+    width: 400px;
+}
+.image p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
+    font-size: 18px;
+}
+
+/* Cards */
+
+h2 {
+    margin-top: 1em;
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1f2937;
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2em;
+    margin-left: 16em;
+    margin-right: 16em;
+}
+
+.box {
+    margin-top:2em;
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 12px;
+    border-color: #3882f6;
+    padding: 4em;
+    display: flex;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.card-text {
+    margin-top: 4px;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    text-align: center;
 }
