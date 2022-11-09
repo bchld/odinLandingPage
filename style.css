@@ -139,8 +139,78 @@ h2 {
 
 .card-text {
     margin-top: 4px;
+    padding-bottom: 2em;
     display: flex;
     justify-content: flex-start;
     align-content: center;
     text-align: center;
+}
+
+/* Quote section */
+
+.quote-container {
+    padding: 4em;
+    background-color: #e5e7eb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.quote {
+    font: #1f2937;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 100;
+}
+
+.author {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+/* Call to action section */
+
+.cta-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 4em;
+    background-color: #3882f6;
+    padding: 2em;
+    color: #e5e7eb;
+    border-radius: 8px;
+}
+
+.cta-header {
+    font-size: 24px;
+    font-weight: bold;
+
+}
+
+.cta-text {
+
+}
+
+.cta-button {
+    display: flex;
+    align-items: flex-start;
+    background-color: #3882f6;
+    font-weight: bold;
+    color: #f9faf8;
+    border-radius: 8px;
+    padding: 7px;
+    border-color: white;
+}
+
+/* Footer */
+
+footer {
+    background-color: #1f2937;
+    color: #e5e7eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
 }
